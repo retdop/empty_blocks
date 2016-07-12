@@ -1,0 +1,229 @@
+.kktooltip.with-3d-shadow,
+.with-3d-shadow .kktooltip {
+  -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.kkd3 text {
+  font: normal 12px Arial;
+}
+.kkd3 .title {
+  font: bold 14px Arial;
+}
+.kk-background {
+  fill: #fff;
+  fill-opacity: 0;
+}
+.kkd3.kk-noData {
+  font-size: 18px;
+  font-weight: bold;
+}
+.kk-brush .extent {
+  fill-opacity: 0.125;
+  shape-rendering: crispEdges;
+}
+.kk-brush .resize path {
+  fill: #eee;
+  stroke: #666;
+}
+.kkd3 .kk-legend .kk-series {
+  cursor: pointer;
+}
+.kkd3 .kk-legend .kk-disabled circle {
+  fill-opacity: 0;
+}
+.kkd3 .kk-brush .extent {
+  fill-opacity: 0 !important;
+}
+.kkd3 .kk-brushBackground rect {
+  stroke: #000;
+  stroke-width: 0.4;
+  fill: #fff;
+  fill-opacity: 0.7;
+}
+@media print {
+  .kkd3 text {
+    stroke-width: 0;
+    fill-opacity: 1;
+  }
+}
+.kk-axis .domain {
+  stroke: #e6e6e6;
+  stroke-width: 2;
+  fill: none;
+}
+.kk-axis .tick text {
+  font-family: 'Proxima-Light', 'Helvetica Neue';
+  font-size: 12px;
+  fill: #7f8faf;
+}
+.kk-axis.kk-y .tick line {
+  stroke: #e6e6e6;
+  stroke-width: 2;
+  fill: none;
+  stroke-dasharray: 4;
+}
+.kkd3 .kk-groups path.kk-line {
+  fill: none;
+}
+.kkd3 .kk-groups path.kk-area {
+  stroke: none;
+}
+.kkd3.kk-line .kkd3.kk-scatter .kk-groups .kk-point {
+  fill-opacity: 0;
+  stroke-opacity: 0;
+}
+.kkd3.kk-scatter.kk-single-point .kk-groups .kk-point {
+  fill-opacity: 0.5 !important;
+  stroke-opacity: 0.5 !important;
+}
+.kkd3 .kk-point-paths path {
+  stroke: #aaa;
+  stroke-opacity: 0;
+  fill: #eee;
+  fill-opacity: 0;
+}
+.kkd3 .kk-indexLine {
+  cursor: ew-resize;
+}
+.with-transitions .kkd3 .kk-groups .kk-point {
+  transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
+  -moz-transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
+  -webkit-transition: stroke-width 250ms linear, stroke-opacity 250ms linear;
+}
+.kkd3.kk-scatter .kk-groups .kk-point.hover,
+.kkd3 .kk-groups .kk-point.hover {
+  stroke-width: 7px;
+  fill-opacity: 0.95 !important;
+  stroke-opacity: 0.95 !important;
+}
+.kkd3.kk-stackedarea path.kk-area {
+  fill-opacity: 0.7;
+  stroke-opacity: 0;
+  transition: fill-opacity 250ms linear, stroke-opacity 250ms linear;
+  -moz-transition: fill-opacity 250ms linear, stroke-opacity 250ms linear;
+  -webkit-transition: fill-opacity 250ms linear, stroke-opacity 250ms linear;
+}
+.kkd3.kk-stackedarea path.kk-area.hover {
+  fill-opacity: 0.9;
+}
+.kkd3.kk-stackedarea .kk-groups .kk-point {
+  stroke-opacity: 0;
+  fill-opacity: 0;
+}
+.kktooltip {
+  position: absolute;
+  background-color: #fff;
+  color: #fff;
+  padding: 1px;
+  border: 1px solid rgba(0,0,0,0.2);
+  z-index: 10000;
+  display: block;
+  font-family: Arial;
+  font-size: 13px;
+  text-align: left;
+  pointer-events: none;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.kktooltip {
+  background: rgba(33,33,33,0.7);
+  border: 1px solid rgba(0,0,0,0.5);
+  border-radius: 4px;
+}
+.kktooltip.with-transitions,
+.with-transitions .kktooltip {
+  transition: opacity 50ms linear;
+  -moz-transition: opacity 50ms linear;
+  -webkit-transition: opacity 50ms linear;
+  transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -webkit-transition-delay: 200ms;
+}
+.kktooltip.x-kktooltip,
+.kktooltip.y-kktooltip {
+  padding: 8px;
+}
+.kktooltip h3 {
+  margin: 0;
+  padding: 4px 14px;
+  line-height: 18px;
+  font-weight: normal;
+  background-color: rgba(247,247,247,0.75);
+  color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #ebebeb;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+.kktooltip p {
+  margin: 0;
+  padding: 5px 14px;
+  text-align: center;
+}
+.kktooltip span {
+  display: inline-block;
+  margin: 2px 0;
+}
+.kktooltip table {
+  margin: 6px;
+  border-spacing: 0;
+}
+.kktooltip table td {
+  padding: 2px 9px 2px 0;
+  vertical-align: middle;
+}
+.kktooltip table td.key {
+  font-weight: normal;
+  color: #fff;
+}
+.kktooltip table td.key.total {
+  font-weight: bold;
+}
+.kktooltip table td.value {
+  text-align: right;
+  font-weight: bold;
+  color: #fff;
+}
+.kktooltip table tr.highlight td {
+  padding: 1px 9px 1px 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.kktooltip table td.legend-color-guide div {
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+}
+.kktooltip table td.legend-color-guide div {
+  width: 12px;
+  height: 12px;
+}
+.kktooltip strong {
+  color: #fff;
+}
+.kktooltip .footer {
+  padding: 3px;
+  text-align: center;
+}
+.kktooltip-pending-removal {
+  pointer-events: none;
+  display: none;
+}
+.kkd3 .kk-interactiveGuideLine {
+  pointer-events: none;
+}
+.kkd3 line.kk-guideline {
+  stroke: #ccc;
+}
